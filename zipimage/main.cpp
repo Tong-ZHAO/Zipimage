@@ -41,7 +41,7 @@ int main()
   restoreImage(quad_image, re_img, start_point, tree_height, img_size);
 
   delete image;
-  delete re_img;
+  delete [] re_img;
   delete quad_image;
 
   /*--------------------------------------------------*/
@@ -66,7 +66,7 @@ int main()
   restoreImageWithSquare(quad_image, re_img, start_point, tree_height, img_size);
 
   delete image;
-  delete re_img;*/
+  delete [] re_img;*/
   
   /*-------------------------------------------------------*/
   /*          Test function: encodeRectImage 
@@ -90,7 +90,7 @@ int main()
   restoreImage(quad_image, re_img, start_point, tree_height, img_size);
 
   delete image;
-  delete re_img;
+  delete [] re_img;
   delete quad_image; */
 
   /*-------------------------------------------------------*/
@@ -119,7 +119,7 @@ int main()
   cout << "The compression rate is " << cmp_rate << endl;
 
   delete image;
-  delete re_img;
+  delete [] re_img;
   delete quad_image;*/
 
   /*-------------------------------------------------------*/
@@ -142,8 +142,8 @@ int main()
     delete color_tree[i];
   }
 
-  delete color_img;
-  delete color_tree;*/
+  delete [] color_img;
+  delete [] color_tree;*/
 
   /*-------------------------------------------------------*/
   /*          Test function: saveTree, loadTree  
@@ -172,7 +172,7 @@ int main()
 
 
   delete image;
-  delete re_img;
+  delete [] re_img;
   delete quad_image;
   delete file_lena;*/
 
